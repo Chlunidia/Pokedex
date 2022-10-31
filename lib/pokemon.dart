@@ -20,7 +20,35 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Center(
             child: Padding(
               padding: const EdgeInsets.only(top: 5),
-              child: Card(),
+              child: Card(
+                elevation: 5,
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: SizedBox(
+                  width: 500,
+                  height: 430,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        width: 500,
+                        height: 110,
+                        color: Color.fromARGB(255, 161, 216, 144),
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(
+                              width: 200,
+                              height: 150,
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.only(top: 10, left: 10),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
         ),
