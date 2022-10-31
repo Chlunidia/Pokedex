@@ -227,6 +227,228 @@ class _Pokedex1State extends State<Pokedex1> {
             ),
           ),
         ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 320, left: 20),
+            child: Row(
+              children: const [
+                Text(
+                  'HP: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 340),
+            child: Divider(
+              indent: 20,
+              endIndent: 300,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 350, left: 60),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 320, left: 150),
+            child: Row(
+              children: const [
+                Text(
+                  'Speed: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 340, left: 130),
+            child: Divider(
+              indent: 20,
+              endIndent: 160,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 350, left: 195),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 320, left: 280),
+            child: Row(
+              children: const [
+                Text(
+                  'Special Attack: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 340, left: 260),
+            child: Divider(
+              indent: 20,
+              endIndent: 20,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 350, left: 330),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 380, left: 20),
+            child: Row(
+              children: const [
+                Text(
+                  'Attack: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 400),
+            child: Divider(
+              indent: 20,
+              endIndent: 300,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 410, left: 60),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 380, left: 150),
+            child: Row(
+              children: const [
+                Text(
+                  'Defense: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 400, left: 130),
+            child: Divider(
+              indent: 20,
+              endIndent: 160,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 410, left: 195),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 380, left: 280),
+            child: Row(
+              children: const [
+                Text(
+                  'Special Defense: ',
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 400, left: 260),
+            child: Divider(
+              indent: 20,
+              endIndent: 20,
+              thickness: 1,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 410, left: 330),
+            child: Row(
+              children: const [
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 15),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
