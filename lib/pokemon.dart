@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 
 class Pokedex1 extends StatefulWidget {
   const Pokedex1({
-    super.key, required this.number
+    super.key, 
+    required this.number,
+    required this.dinosaur
   });
-  final String number;
+  final String 
+  number,
+  dinosaur
+  ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
 }
@@ -48,7 +53,7 @@ class _Pokedex1State extends State<Pokedex1> {
                                             fontSize: 20),
                                       ),
                                       TextSpan(
-                                        text: '',
+                                        text: widget.dinosaur,
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 30),
