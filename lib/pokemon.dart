@@ -135,6 +135,52 @@ class _Pokedex1State extends State<Pokedex1> {
             ),
           ),
         ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 170, left: 10),
+            child: Row(
+              children: <Widget>[
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 210, left: 10),
+            child: Row(
+              children: [
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
