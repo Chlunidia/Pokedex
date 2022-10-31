@@ -40,6 +40,40 @@ class _Pokedex1State extends State<Pokedex1> {
                               child: Padding(
                                 padding:
                                     const EdgeInsets.only(top: 10, left: 10),
+                                    child: RichText(
+                                  text: TextSpan(
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: '',
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20),
+                                      ),
+                                      TextSpan(
+                                        text: '',
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 30),
+                                      ),
+                                      const TextSpan(
+                                        text: 'Category: ',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20),
+                                      ),
+                                      TextSpan(
+                                        text: '',
+                                        style: TextStyle(fontSize: 20),
+                                      ),
+                                      const TextSpan(
+                                        text: 'Type: ',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                           ],
