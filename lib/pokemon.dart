@@ -19,7 +19,8 @@ class Pokedex1 extends StatefulWidget {
     required this.weaknesses6,
     required this.weaknesses7,
     required this.weaknesses8,
-    required this.heightwight
+    required this.heightwight,
+    required this.description
   });
   final String 
   number,
@@ -38,7 +39,8 @@ class Pokedex1 extends StatefulWidget {
   weaknesses6,
   weaknesses7,
   weaknesses8,
-  heightwight
+  heightwight,
+  description
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -237,11 +239,11 @@ class _Pokedex1State extends State<Pokedex1> {
             child: SizedBox(
               width: 350,
               child: RichText(
-                text: const TextSpan(
+                text: TextSpan(
                   children: <TextSpan>[
                     TextSpan(
                         text:
-                            '',
+                            widget.description,
                         style: TextStyle(color: Colors.black),),
                   ],
                 ),
