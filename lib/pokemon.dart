@@ -86,6 +86,20 @@ class _Pokedex1State extends State<Pokedex1> {
             ),
           ),
         ),
+        Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 10, left: 210),
+            child: Container(
+              height: 170,
+              width: 170,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(''),
+                ),
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
