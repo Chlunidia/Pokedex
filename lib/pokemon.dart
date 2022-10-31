@@ -8,7 +8,9 @@ class Pokedex1 extends StatefulWidget {
     required this.category,
     required this.image,
     required this.type1,
-    required this.type2
+    required this.type2,
+    required this.type3,
+    required this.type4
   });
   final String 
   number,
@@ -16,7 +18,9 @@ class Pokedex1 extends StatefulWidget {
   category,
   image,
   type1,
-  type2
+  type2,
+  type3,
+  type4
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -126,9 +130,9 @@ class _Pokedex1State extends State<Pokedex1> {
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.type3),
                   ),
-                  label: Text(''),
+                  label: Text(widget.type4),
                 ),
               ],
             ),
