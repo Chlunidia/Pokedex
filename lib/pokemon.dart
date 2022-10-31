@@ -10,7 +10,15 @@ class Pokedex1 extends StatefulWidget {
     required this.type1,
     required this.type2,
     required this.type3,
-    required this.type4
+    required this.type4,
+    required this.weaknesses1,
+    required this.weaknesses2,
+    required this.weaknesses3,
+    required this.weaknesses4,
+    required this.weaknesses5,
+    required this.weaknesses6,
+    required this.weaknesses7,
+    required this.weaknesses8
   });
   final String 
   number,
@@ -20,7 +28,15 @@ class Pokedex1 extends StatefulWidget {
   type1,
   type2,
   type3,
-  type4
+  type4,
+  weaknesses1,
+  weaknesses2,
+  weaknesses3,
+  weaknesses4,
+  weaknesses5,
+  weaknesses6,
+  weaknesses7,
+  weaknesses8
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -154,20 +170,20 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 170, left: 10),
             child: Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.weaknesses1),
                   ),
-                  label: Text(''),
+                  label: Text(widget.weaknesses2),
                 ),
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.weaknesses3),
                   ),
-                  label: Text(''),
+                  label: Text(widget.weaknesses4),
                 ),
               ],
             ),
@@ -177,20 +193,20 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 210, left: 10),
             child: Row(
-              children: const [
+              children: [
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.weaknesses5),
                   ),
-                  label: Text(''),
+                  label: Text(widget.weaknesses6),
                 ),
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.weaknesses7),
                   ),
-                  label: Text(''),
+                  label: Text(widget.weaknesses8),
                 ),
               ],
             ),
