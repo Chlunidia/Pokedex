@@ -6,13 +6,17 @@ class Pokedex1 extends StatefulWidget {
     required this.number,
     required this.dinosaur,
     required this.category,
-    required this.image
+    required this.image,
+    required this.type1,
+    required this.type2
   });
   final String 
   number,
   dinosaur,
   category,
-  image
+  image,
+  type1,
+  type2
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -111,13 +115,13 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 100, left: 10),
             child: Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
-                    child: Text(''),
+                    child: Text(widget.type1),
                   ),
-                  label: Text(''),
+                  label: Text(widget.type2),
                 ),
                 Chip(
                   avatar: CircleAvatar(
