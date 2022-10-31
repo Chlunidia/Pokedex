@@ -40,7 +40,7 @@ class _Pokedex1State extends State<Pokedex1> {
                               child: Padding(
                                 padding:
                                     const EdgeInsets.only(top: 10, left: 10),
-                                    child: RichText(
+                                child: RichText(
                                   text: TextSpan(
                                     children: <TextSpan>[
                                       TextSpan(
@@ -97,6 +97,29 @@ class _Pokedex1State extends State<Pokedex1> {
                   image: NetworkImage(''),
                 ),
               ),
+            ),
+          ),
+        ),
+        Align(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 100, left: 10),
+            child: Row(
+              children: <Widget>[
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    child: Text(''),
+                  ),
+                  label: Text(''),
+                ),
+              ],
             ),
           ),
         ),
