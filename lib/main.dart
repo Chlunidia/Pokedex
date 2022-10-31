@@ -9,6 +9,29 @@ class PokemonList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: const Text(
+            'Pokemon List',
+            style: TextStyle(
+                fontSize: 30, 
+                fontWeight: FontWeight.bold, 
+                color: Colors.white
+            ),
+          ),
+        ),
+        body: ListView(
+          children: const <Widget>[
+          ],
+        ),
+      ),
+    );
   }
 }
