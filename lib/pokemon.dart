@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 class Pokedex1 extends StatefulWidget {
   const Pokedex1({
-    super.key,
+    super.key, required this.number
   });
-
+  final String number;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
 }
@@ -31,7 +29,7 @@ class _Pokedex1State extends State<Pokedex1> {
                       Container(
                         width: 500,
                         height: 110,
-                        color: Color.fromARGB(255, 161, 216, 144),
+                        color: const Color.fromARGB(255, 161, 216, 144),
                         child: Row(
                           children: <Widget>[
                             SizedBox(
@@ -44,18 +42,18 @@ class _Pokedex1State extends State<Pokedex1> {
                                   text: TextSpan(
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text: '',
-                                        style: const TextStyle(
+                                        text: widget.number,
+                                        style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 20),
                                       ),
                                       TextSpan(
                                         text: '',
-                                        style: const TextStyle(
+                                        style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 30),
                                       ),
-                                      const TextSpan(
+                                      TextSpan(
                                         text: 'Category: ',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -65,7 +63,7 @@ class _Pokedex1State extends State<Pokedex1> {
                                         text: '',
                                         style: TextStyle(fontSize: 20),
                                       ),
-                                      const TextSpan(
+                                      TextSpan(
                                         text: 'Type: ',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -88,11 +86,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 10, left: 210),
+            padding: const EdgeInsets.only(top: 10, left: 210),
             child: Container(
               height: 170,
               width: 170,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(''),
                 ),
@@ -104,7 +102,7 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 100, left: 10),
             child: Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
@@ -139,7 +137,7 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 170, left: 10),
             child: Row(
-              children: <Widget>[
+              children: const <Widget>[
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
@@ -162,7 +160,7 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 210, left: 10),
             child: Row(
-              children: [
+              children: const [
                 Chip(
                   avatar: CircleAvatar(
                     backgroundColor: Colors.blue,
@@ -253,11 +251,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 350, left: 60),
+            padding: const EdgeInsets.only(top: 350, left: 60),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
@@ -290,11 +288,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 350, left: 195),
+            padding: const EdgeInsets.only(top: 350, left: 195),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
@@ -327,11 +325,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 350, left: 330),
+            padding: const EdgeInsets.only(top: 350, left: 330),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
@@ -364,11 +362,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 410, left: 60),
+            padding: const EdgeInsets.only(top: 410, left: 60),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
@@ -401,11 +399,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 410, left: 195),
+            padding: const EdgeInsets.only(top: 410, left: 195),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
@@ -438,11 +436,11 @@ class _Pokedex1State extends State<Pokedex1> {
         ),
         Align(
           child: Padding(
-            padding: EdgeInsets.only(top: 410, left: 330),
+            padding: const EdgeInsets.only(top: 410, left: 330),
             child: Row(
               children: const [
                 Text(
-                  '3',
+                  '',
                   style: TextStyle(fontSize: 15),
                 ),
               ],
