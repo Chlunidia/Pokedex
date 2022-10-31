@@ -1,15 +1,30 @@
 import 'package:flutter/material.dart';
 
-class Pokedex extends StatefulWidget {
-  const Pokedex({super.key});
+import 'package:flutter/material.dart';
+
+class Pokedex1 extends StatefulWidget {
+  const Pokedex1({
+    super.key,
+  });
 
   @override
-  State<Pokedex> createState() => _PokedexState();
+  State<Pokedex1> createState() => _Pokedex1State();
 }
 
-class _PokedexState extends State<Pokedex> {
+class _Pokedex1State extends State<Pokedex1> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Stack(
+      children: <Widget>[
+        Positioned(
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5),
+              child: Card(),
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }
