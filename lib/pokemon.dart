@@ -20,7 +20,13 @@ class Pokedex1 extends StatefulWidget {
     required this.weaknesses7,
     required this.weaknesses8,
     required this.heightwight,
-    required this.description
+    required this.description,
+    required this.hp,
+    required this.speed,
+    required this.specialattack,
+    required this.attack,
+    required this.defense,
+    required this.specialdefense
   });
   final String 
   number,
@@ -40,7 +46,13 @@ class Pokedex1 extends StatefulWidget {
   weaknesses7,
   weaknesses8,
   heightwight,
-  description
+  description,
+  hp,
+  speed,
+  specialattack,
+  attack,
+  defense,
+  specialdefense
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -80,17 +92,17 @@ class _Pokedex1State extends State<Pokedex1> {
                                     children: <TextSpan>[
                                       TextSpan(
                                         text: widget.number,
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 20),
                                       ),
                                       TextSpan(
                                         text: widget.dinosaur,
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 30),
                                       ),
-                                      TextSpan(
+                                      const TextSpan(
                                         text: 'Category: ',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -98,9 +110,9 @@ class _Pokedex1State extends State<Pokedex1> {
                                       ),
                                       TextSpan(
                                         text: widget.category,
-                                        style: TextStyle(fontSize: 20),
+                                        style: const TextStyle(fontSize: 20),
                                       ),
-                                      TextSpan(
+                                      const TextSpan(
                                         text: 'Type: ',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -226,7 +238,7 @@ class _Pokedex1State extends State<Pokedex1> {
                   children: <TextSpan>[
                     TextSpan(
                         text: widget.heightwight,
-                        style: TextStyle(color: Colors.black),),
+                        style: const TextStyle(color: Colors.black),),
                   ],
                 ),
               ),
@@ -244,7 +256,7 @@ class _Pokedex1State extends State<Pokedex1> {
                     TextSpan(
                         text:
                             widget.description,
-                        style: TextStyle(color: Colors.black),),
+                        style: const TextStyle(color: Colors.black),),
                   ],
                 ),
               ),
@@ -290,10 +302,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 350, left: 60),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.hp,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -327,10 +339,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 350, left: 195),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.speed,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -364,10 +376,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 350, left: 330),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.specialattack,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -401,10 +413,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 410, left: 60),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.attack,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -438,10 +450,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 410, left: 195),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.defense,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
@@ -475,10 +487,10 @@ class _Pokedex1State extends State<Pokedex1> {
           child: Padding(
             padding: const EdgeInsets.only(top: 410, left: 330),
             child: Row(
-              children: const [
+              children: [
                 Text(
-                  '',
-                  style: TextStyle(fontSize: 15),
+                  widget.specialdefense,
+                  style: const TextStyle(fontSize: 15),
                 ),
               ],
             ),
