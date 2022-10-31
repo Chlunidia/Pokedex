@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Pokedex1 extends StatefulWidget {
-  const Pokedex1({
+class Pokedex extends StatefulWidget {
+  const Pokedex({
     super.key, 
     required this.number,
     required this.dinosaur,
@@ -55,10 +55,10 @@ class Pokedex1 extends StatefulWidget {
   specialdefense
   ;
   @override
-  State<Pokedex1> createState() => _Pokedex1State();
+  State<Pokedex> createState() => _PokedexState();
 }
 
-class _Pokedex1State extends State<Pokedex1> {
+class _PokedexState extends State<Pokedex> {
   @override
   Widget build(BuildContext context) {
     return Stack(
