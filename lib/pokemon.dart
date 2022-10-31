@@ -123,6 +123,18 @@ class _Pokedex1State extends State<Pokedex1> {
             ),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.only(top: 145, left: 15),
+          child: RichText(
+            text: const TextSpan(
+              text: 'Weaknesses: ',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  color: Colors.black),
+            ),
+          ),
+        ),
       ],
     );
   }
