@@ -5,12 +5,14 @@ class Pokedex1 extends StatefulWidget {
     super.key, 
     required this.number,
     required this.dinosaur,
-    required this.category
+    required this.category,
+    required this.image
   });
   final String 
   number,
   dinosaur,
-  category
+  category,
+  image
   ;
   @override
   State<Pokedex1> createState() => _Pokedex1State();
@@ -97,9 +99,9 @@ class _Pokedex1State extends State<Pokedex1> {
             child: Container(
               height: 170,
               width: 170,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(''),
+                  image: NetworkImage(widget.image),
                 ),
               ),
             ),
