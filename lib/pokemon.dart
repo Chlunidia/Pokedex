@@ -191,7 +191,7 @@ class _Pokedex1State extends State<Pokedex1> {
                   children: <TextSpan>[
                     TextSpan(
                         text: '',
-                        style: TextStyle(color: Colors.black)),
+                        style: TextStyle(color: Colors.black),),
                   ],
                 ),
               ),
@@ -209,10 +209,21 @@ class _Pokedex1State extends State<Pokedex1> {
                     TextSpan(
                         text:
                             '',
-                        style: TextStyle(color: Colors.black)),
+                        style: TextStyle(color: Colors.black),),
                   ],
                 ),
               ),
+            ),
+          ),
+        ),
+        const Align(
+          child: Padding(
+            padding: EdgeInsets.only(top: 300),
+            child: Divider(
+              indent: 20,
+              endIndent: 20,
+              thickness: 1,
+              color: Colors.black,
             ),
           ),
         ),
